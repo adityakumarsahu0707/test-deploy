@@ -6,6 +6,11 @@ pipeline{
 				sh 'date'
 			}
 		}
+		stage('test2'){
+			steps{
+				sh 'cal'
+			}
+		}
 	}
 }
 
