@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('Build'){
 			steps{
-				sh 'cp ./index.html /var/www/html/'
+				sh 'sudo cp ./index.html /var/www/html/'
 			}
 		}
 		stage('Test'){
