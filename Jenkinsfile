@@ -1,14 +1,14 @@
 pipeline{
 	agent any
 	stages{
-		stage('test'){
+		stage('Build'){
 			steps{
-				sh 'date'
+				sh 'cp ./index.html /var/www/html/'
 			}
 		}
-		stage('test2'){
+		stage('Test'){
 			steps{
-				sh 'cal'
+				sh 'sudo systemctl start httpd'
 			}
 		}
 	}
