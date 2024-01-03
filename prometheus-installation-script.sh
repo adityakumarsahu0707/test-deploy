@@ -50,3 +50,7 @@ EOF
 #Starting Prometheus service
 sudo systemctl daemon-reload
 sudo systemctl enable --now prometheus
+
+##### Firewall setting
+# firewall-cmd --add-port=9090/tcp --permanent 
+# firewall-cmd --reload
